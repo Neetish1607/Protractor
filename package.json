@@ -1,0 +1,24 @@
+{
+  "name": "protractor_latest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "configuration.js",
+  "scripts": {
+    "protractor": "cli.js",
+    "webdriver-update":"webdriver-manager update",
+    "webdriver-start": "webdriver-manager start",
+    "protractorTest": "protractor configuration.js",
+    "SmokeSuite": "protractor configuration.js --suite Smoke",
+    "RegressionSuite": "protractor configuration.js --suite Regression",
+    "cucumberTest":"",
+    "start": "npm run webdriver-update && npm run webdriver-start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^3.10.3",
+    "protractor": "^7.0.0",
+    "jasmine-data-provider":"^2.2.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}
